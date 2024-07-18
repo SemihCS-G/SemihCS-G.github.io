@@ -1,0 +1,29 @@
+.orange-button {
+  width: 500px;
+  position: relative;
+  background-color: #ff4d00;
+  color: whitesmoke;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-top: 20px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.orange-button:hover {
+  border-radius: 5px;
+}
+
+.orange-button::after {
+  content: ">";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
+}
+
+.orange-button:hover::after {
+  left: 20px;
+}

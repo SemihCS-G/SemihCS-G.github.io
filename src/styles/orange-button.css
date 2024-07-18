@@ -1,0 +1,35 @@
+.orange-button {
+  position: relative;
+  background-color: #ff4d00;
+  color: whitesmoke;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.orange-button:hover {
+  background-color: #cc3502;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.orange-button::after {
+  content: ">>";
+  font-size: 10px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.3s ease;
+}
+
+.orange-button:hover::after {
+  right: 25px;
+}
+
+.orange-button:active::after {
+  right: -20px;
+}
