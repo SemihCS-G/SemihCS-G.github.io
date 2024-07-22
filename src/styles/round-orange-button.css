@@ -1,5 +1,4 @@
-.orange-button {
-  width: 500px;
+.round-orange-button {
   position: relative;
   background-color: #ff4d00;
   color: whitesmoke;
@@ -7,23 +6,24 @@
   text-decoration: none;
   border-radius: 50px;
   margin-top: 20px;
-  transition: all 0.3s;
+  transition: all 0.5s;
   overflow: hidden;
 }
 
-.orange-button:hover {
+.round-orange-button:hover {
   border-radius: 5px;
+  padding-left: 10px;
 }
 
-.orange-button::after {
+.round-orange-button::after {
   content: ">";
   position: absolute;
-  left: -20px;
+  right: -20px;
   top: 50%;
   transform: translateY(-50%);
-  transition: left 0.3s ease;
+  transition: right 0.4s ease;
 }
 
-.orange-button:hover::after {
-  left: 20px;
+.round-orange-button:hover::after {
+  right: 20px;
 }

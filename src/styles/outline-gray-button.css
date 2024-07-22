@@ -1,8 +1,8 @@
-.outline-orange-button {
+.outline-gray-button {
   position: relative;
   background-color: white;
-  color: #ff4d00;
-  border: 2px solid #ff4d00;
+  color: gray;
+  border: 2px solid gray;
   padding: 15px 30px;
   text-decoration: none;
   border-radius: 5px;
@@ -11,14 +11,15 @@
   overflow: hidden;
 }
 
-.outline-orange-button:hover {
-  background-color: seashell;
+.outline-gray-button:hover {
   border-radius: 5px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
-.outline-orange-button::after {
-  content: "";
+
+.outline-gray-button::after {
+  content: ">";
+  color: gray;
   font-size: 10px;
   position: absolute;
   right: -20px;
@@ -27,6 +28,6 @@
   transition: right 0.3s ease;
 }
 
-.outline-orange-button:hover::after {
+.outline-gray-button:hover::after {
   right: 25px;
 }
